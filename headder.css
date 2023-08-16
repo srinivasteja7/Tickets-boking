@@ -1,0 +1,12 @@
+.header
+         {
+           height: 60px;
+           display: flex;
+           flex-direction: row;
+          }
+          .start
+          {
+            background-color: blue;
+            width:220px;
+            margin-left: 30px;
+          }

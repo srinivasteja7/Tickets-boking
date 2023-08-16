@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<head>
+    <title>Booking demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+        .body
+        {
+          height: 700px;
+          margin-top: 100px;
+          margin-left: 20px;
+          padding-bottom: 50px;
+          margin-left: 50px;
+
+        }
+        .headder
+         {
+           height: 55px;
+           display: flex;
+           flex-direction: row;
+           margin-bottom: 30px;
+           align-items: center;
+           position: fixed;
+           top: 0px;
+           bottom: 70px;
+           right: 0px;
+           left: 0px;
+           background-color:white;
+           padding-top: 10px;
+           margin-left: 50px;
+           }
+          .start
+          {
+            margin-right: 10px;
+            align-items: center;
+            display: flex;
+          } 
+          .middle
+          {
+            display: flex;
+            flex: 1;
+            max-width: 300px;
+            display: flex;
+            align-items: center;
+            padding-left: 50px;
+            margin-left: 60px;
+            height: 50px;
+            justify-content: inline;
+          }
+          .end
+          {
+            display: flex;
+            padding-left: 150px;
+            padding-top: 10px;
+            padding-bottom: 20px;
+          }
+          .main
+          {
+            height: 40px;
+            padding-left: 10px;
+            padding-left: 10px;
+          }
+          .ham
+          {
+            height:5px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+          }
+        img{
+            width:200px;
+            height:300px;
+            object-fit: cover; 
+            border-radius: 5px;     
+          }
+        p{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .grid
+        {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            row-gap: 25px;
+            column-gap: 0px;
+      }
+        .adi-text
+        {
+            background-color:aliceblue;
+            margin-top: 5px;
+            padding-left: 18px;
+            
+        }
+        .rrr-text
+        {
+            background-color: aliceblue;
+            margin-top: 5px;
+            padding-left: 33px;
+        }
+        .kgf-text
+        {
+            background-color: aliceblue;
+            margin-top: 5px;
+            padding-left: 33px;
+            
+  
+        }
+        .saaho-text
+        {
+            background-color:aliceblue;
+            margin-top: 5px;
+            padding-left: 33px;
+  
+        }
+        .pushpa-text
+        {
+            background-color:aliceblue;
+            margin-top: 5px;
+            padding-left: 33px;
+        }
+        .liger-text
+        {
+            background-color:aliceblue;
+            margin-top: 5px;
+            padding-left: 33px;
+        }
+        .kantara-text
+        {
+            background-color:aliceblue;
+            margin-top: 5px;
+            padding-left: 30px;
+        }
+        .bemla-text
+        {
+            background-color:aliceblue;
+            margin-top: 5px;
+            padding-left: 10px;
+        }
+        .search1
+        {
+            height: 10pxS;
+            padding-bottom: 20px;
+            object-fit: cover;
+            margin-bottom: 100px;
+        }
+        .search
+        {
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 30px;
+        vertical-align: top;
+        width: 500px;
+        border-radius: 30px;
+        border-color: grey;
+        box-shadow: inset 1px 2px 3px
+        rgba(0 , 0, 0 , 0.10);
+        }
+        .search::placeholder
+        {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: large;
+            padding-left: 15px;
+            
+        }
+        .ss
+        {
+         width: 40px;
+         height: 30px;
+         padding-top: 5px;
+         border-radius: 8px;
+         margin-bottom: 2px; 
+         margin-left: 2px;
+       }
+        .rr
+        {
+        height: 20px;
+        width: 20px;
+        padding-bottom: 4px;
+        margin-bottom: 7px;
+        padding-left: 3px;
+        cursor: pointer;
+        }
+        .sign
+        {
+         height: 35px;
+         width: 60px;
+        }
+        .sig{
+           border-radius: 2px;
+           border: none;
+           margin-top: 10px;
+           cursor:pointer;
+           margin-left: 50px;
+
+        }
+        .loc
+        {
+        height: 18px;
+        width: 20px;
+        padding-top:5px;
+        vertical-align: center; 
+        color:aliceblue; 
+      }
+        .locc
+        {
+            margin-right: 30px;
+            height: 35px;
+            margin-top: 12px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            vertical-align: center;
+            border: none;
+            border-radius: 10px;
+            background-color: rgb(204, 67, 67);
+            color: aliceblue; 
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body class="body">
+    <dev class="headder">
+        <dev class="start">
+            <img class="main" src="icons/main.png">
+        </dev>
+
+        <dev class="middle">
+            <input class="search"  type="text" placeholder="search">
+            <button class="ss" >
+             <img class="rr" src="icons/search.svg">
+            </button>
+        </dev>
+
+        <dev class="end">
+            <button class="locc">
+            <img class="loc" src="icons/location.png">
+            HYDERABAD
+            </button>
+            <button class="sig">
+                <img class="sign" src="icons/sign.jpg">
+            </button>
+        </dev>
+    </dev>
+    <div class="grid">
+        <div class="e">
+            <img class="adi" src="aadipurush.jpg">
+            <p class="adi-text">ADIPURISH U/I TELUGU</p>
+            </div>
+
+            <div class="f">
+            <img class="rrr" src="RRR.jpg">
+            <p class="rrr-text">RRR U/I TELUGU</p>
+            </div>
+            <div class="g">
+            <img class="kgf" src="kgf.jpg">
+            <p class="kgf-text">KGF U/I TELUGU</p>
+            </div>
+            <div class="h">
+            <img class="saaho" src="saaho.jpg">
+            <p class="saaho-text">SAAHO U/I TELUGU</p>
+            </div>
+            <div class="i">
+            <img class="pushpa" src="pushpa.jpg">
+            <p class="pushpa-text">PUSHPA U/I TELUGU</p>
+            </div>
+            <div class="j">
+            <img class="liger" src="liger.jpg">
+            <p class="liger-text">LIGER U/I TELUGU</p>
+            </div>
+            <div class="k">
+            <img class="kantara" src="kantara.jpg">
+            <p class="kantara-text">KANTARA U/I TELUGU</p>
+            </div>
+            <div class="l">
+            <img class="bemla" src="bemla.jpg">
+            <p class="bemla-text">BEMLA NAYAK U/I TELUGU</p>
+            </div>
+    </div>
+    
+</body>
